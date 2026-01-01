@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /error
+
+# Sitemaps
+Sitemap: https://yana-flow.com/sitemap.xml

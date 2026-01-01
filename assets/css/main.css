@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+/* Lora font faces with style in the family name for easy selection */
+@font-face {
+  font-family: "Lora";
+  src: url("/fonts/Lora-Regular.woff2") format("woff2"),
+    url("/fonts/Lora-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora Bold";
+  src: url("/fonts/Lora-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora Italic";
+  src: url("/fonts/Lora-Italic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora Bold Italic";
+  src: url("/fonts/Lora-BoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora Medium";
+  src: url("/fonts/Lora-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora Medium Italic";
+  src: url("/fonts/Lora-MediumItalic.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora SemiBold";
+  src: url("/fonts/Lora-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora SemiBold Italic";
+  src: url("/fonts/Lora-SemiBoldItalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@theme {
+  --color-second-green: #4e5e47;
+  --color-light-second-green: #afb7ac;
+  --color-first-purple: #87748a;
+  --color-grey: #9ea5b5;
+  --color-third-tan: #d5b796;
+  --color-near-white-tan: #e1d6cb;
+  --color-fourth-purple: #290544;
+  --color-fifth-near-white: #e0e0e0;
+  --color-deeper-grey: #444444;
+}
+
+@layer base {
+  button {
+    @apply bg-second-green text-white focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-second-green)] hover:ring-[var(--color-second-green)] hover:ring-2 hover:ring-offset-2 cursor-pointer;
+  }
+
+  a {
+    @apply cursor-pointer;
+  }
+
+  h1 {
+    @apply text-second-green text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-first-purple text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-third-tan text-2xl font-bold;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Lora", "Georgia", "Times New Roman", Times, serif;
+    @apply text-fourth-purple;
+  }
+
+  /* Optionally, set Bootstrap's base font family if needed */
+  :root {
+    --bs-font-sans-serif: "Lora", "Georgia", "Times New Roman", Times, serif;
+  }
+
+  .container-xl {
+    @apply py-16 px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 w-full mx-auto;
+  }
+}
+
+.font-regular {
+  font-family: "Lora", "Georgia", "Times New Roman", Times, serif;
+  font-style: normal;
+}
+.font-medium {
+  font-family: "Lora Medium", "Georgia", "Times New Roman", Times, serif;
+  font-style: normal;
+}
+.font-semibold {
+  font-family: "Lora SemiBold", "Georgia", "Times New Roman", Times, serif;
+  font-style: normal;
+}
+.font-bold {
+  font-family: "Lora Bold", "Georgia", "Times New Roman", Times, serif;
+  font-style: normal;
+}
+.font-italic {
+  font-family: "Lora Italic", "Georgia", "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.font-medium-italic {
+  font-family: "Lora Medium Italic", "Georgia", "Times New Roman", Times, serif;
+  font-style: italic;
+}
+.font-semibold-italic {
+  font-family: "Lora SemiBold Italic", "Georgia", "Times New Roman", Times,
+    serif;
+  font-style: italic;
+}
+.font-bold-italic {
+  font-family: "Lora Bold Italic", "Georgia", "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+
+.carousel__viewport {
+  overflow: unset !important;
+  overflow-y: visible !important; 
+  overflow-x: clip !important;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "YANA FLOW Yoga Center",
+  "short_name": "YANA FLOW",
+  "description": "Find your flow with YANA FLOW Yoga Center. Explore our yoga classes, workshops, and events for all levels.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#6b46c1",
+  "icons": [
+    {
+      "src": "/logo/Yana_FLOW_transparent_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
